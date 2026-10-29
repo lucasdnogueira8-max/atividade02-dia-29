@@ -1,0 +1,145 @@
+
+/* Configurações iniciais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Menu */
+header {
+    background-color: black;
+}
+
+.menu {
+    width: 90%;
+    margin: auto;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.logo span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    color: orange;
+}
+
+/* Ícones */
+.icones {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/* Imagem principal */
+.principal {
+    height: 840px;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("imagem/imagmFundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Textos centrais */
+.conteudo {
+    color: white;
+}
+
+.conteudo h1 {
+    font-size: 150px;
+    font-weight: normal;
+}
+
+.conteudo h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+/* Botão */
+.botao {
+    background-color: white;
+    color: black;
+
+    padding: 12px 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: orange;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Ajuste para celular */
+@media (max-width: 700px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .principal {
+        height: 420px;
+    }
+
+    .conteudo h1 {
+        font-size: 100px;
+    }
+
+    .conteudo h2 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+}
